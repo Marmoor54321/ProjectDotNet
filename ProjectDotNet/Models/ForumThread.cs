@@ -10,6 +10,7 @@ namespace ProjectDotNet.Models
         [Required]
         [MaxLength(50)]
         public string Name { get; set; }
+        public virtual ICollection<Post>? Posts { get; set; }
         
     }
 }

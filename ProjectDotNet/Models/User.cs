@@ -16,6 +16,7 @@ namespace ProjectDotNet.Models
             [MaxLength(50)]
             public string LastName { get; set; }
             public virtual ICollection<ForumThread>? ForumThreads { get; set; }
+            public virtual ICollection<Post>? Posts { get; set; }
 
     }
 }
